@@ -79,13 +79,13 @@ const HomePage = () => {
   const email = localStorage.getItem("email");
   const password = localStorage.getItem("password");
   const allUser = JSON.parse(localStorage.getItem("allAcountUsers"));
-  console.log(allUser);
+  (allUser);
   const onlineUser = allUser?.find((e) =>
     e.email === email && e.password === password ? e : null
   );
-  console.log(onlineUser);
+  (onlineUser);
   const receiver = allUser.find((e) => accountNumber === e.accountNumber);
-  console.log(receiver);
+  (receiver);
 
   const handleTransfer = ()=>{
     const updatedData = allUser.map(e=>{

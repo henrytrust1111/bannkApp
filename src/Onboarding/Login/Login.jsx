@@ -24,7 +24,6 @@ const Login=()=>{
         }else{
             alert("you don't have an account with us pls signUp")
         }
-        // console.log(logedinUser)
     }
     return(
         <div className='login-wrapper'>
